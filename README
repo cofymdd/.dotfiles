@@ -22,6 +22,7 @@ openssh
 wget
 nodejs npm
 ffmpeg
+playerctl
 
 Aur:
 paru
@@ -33,9 +34,6 @@ Fonts:
 ttf-jetbrains-mono-nerd
 cozette (.local/share/fonts/cozette)
 
-Services:
-systemctl enable NetworkManager
-
 Flatpaks:
 app.zen_browser.zen
 dev.vencord.Vesktop
@@ -43,11 +41,12 @@ org.telegram.desktop
 com.spotify.Client
 org.gnome.World.Secrets
 
+Services:
+systemctl enable NetworkManager
+
+Command:
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
+stow -v --no-folding -S .
+
 Temporary:
 wofi
-
-Stow command:
-stow --no-folding -v -S .
-
-Need to implement:
-gsettings set org.gnome.desktop.interface color-scheme prefer-dark
