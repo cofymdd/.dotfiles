@@ -1,0 +1,13 @@
+{
+	"files.exclude": {
+		".vscode": true,
+		".stow-local-ignore": true,
+		"LICENSE": true,
+		"README": true
+	},
+	"editor.insertSpaces": false,
+	"editor.tabSize": 4,
+	"editor.detectIndentation": false,
+	"files.insertFinalNewline": true,
+	"files.trimTrailingWhitespace": true
+}

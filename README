@@ -1,0 +1,53 @@
+Base:
+base
+base-devel
+linux
+linux-firmware
+grub
+efibootmgr
+
+Packages:
+networkmanager
+nvidia-open nvidia-utils
+pipewire wireplumber pipewire-pulse pipewire-alsa pipewire-jack
+uwsm hyprland
+flatpak
+xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xdg-user-dirs
+ghostty
+git less
+helix
+stow
+btop
+openssh
+wget
+nodejs npm
+ffmpeg
+
+Aur:
+paru
+quickshell
+cursor-bin
+libxml2-legacy
+
+Fonts:
+ttf-jetbrains-mono-nerd
+cozette (.local/share/fonts/cozette)
+
+Services:
+systemctl enable NetworkManager
+
+Flatpaks:
+app.zen_browser.zen
+dev.vencord.Vesktop
+org.telegram.desktop
+com.spotify.Client
+org.gnome.World.Secrets
+
+Temporary:
+wofi
+
+Stow command:
+stow --no-folding -v -S .
+
+Need to implement:
+gsettings set org.gnome.desktop.interface color-scheme prefer-dark
