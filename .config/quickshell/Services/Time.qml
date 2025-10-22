@@ -3,8 +3,6 @@ pragma Singleton
 import Quickshell
 
 Singleton {
-	readonly property date date: clock.date
-
 	function format(fmt: string): string {
 		return Qt.formatDateTime(clock.date, fmt);
 	}

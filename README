@@ -8,7 +8,7 @@ efibootmgr
 
 Packages:
 networkmanager
-nvidia-open nvidia-utils
+nvidia-open nvidia-utils nvidia-container-toolkit
 pipewire wireplumber pipewire-pulse pipewire-alsa pipewire-jack
 uwsm hyprland
 flatpak
@@ -23,6 +23,7 @@ wget
 nodejs npm
 ffmpeg
 playerctl
+docker docker-compose
 
 Aur:
 paru

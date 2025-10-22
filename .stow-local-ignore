@@ -2,4 +2,5 @@
 ^/README
 
 /.git
+/.cursor
 /.vscode

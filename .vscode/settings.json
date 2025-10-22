@@ -1,9 +1,10 @@
 {
 	"files.exclude": {
+		".cursor": true,
 		".vscode": true,
 		".stow-local-ignore": true,
 		"LICENSE": true,
-		"README": true
+		"README": false
 	},
 	"editor.insertSpaces": false,
 	"editor.tabSize": 4,

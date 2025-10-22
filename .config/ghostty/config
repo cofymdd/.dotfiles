@@ -2,3 +2,4 @@ font-family      = "Cozette"
 background       = #000000
 window-padding-x = 10
 window-padding-y = 10
+keybind = shift+enter=text:\x1b\r
