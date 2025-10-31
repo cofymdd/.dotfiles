@@ -1,0 +1,67 @@
+{
+	/* General: */
+	"use_system_path_prompts": false,
+	"use_system_prompts": false,
+	"restore_on_startup": "none",
+	"telemetry": {
+		"diagnostics": false,
+		"metrics": false
+	},
+	"auto_update": false,
+
+	// Appearance
+	"theme": "One Black",
+
+	/* Keymap */
+	"base_keymap": "Cursor",
+
+	/* Editor: */
+	"tab_size": 3,
+	"hard_tabs": true,
+
+	/* Languages & Tools: */
+	/* Search & Files: */
+	/* Windows & Layout: */
+
+	/* Panels: */
+	"project_panel": {
+		"dock": "right"
+	},
+
+	/* Debugger: */
+	/* Terminal: */
+	/* Version Control: */
+	/* Collaboration: */
+
+	/* Ai */
+	"agent": {
+		"play_sound_when_agent_done": true,
+		"always_allow_tool_actions": true,
+		"default_profile": "ask",
+		"default_model": {
+			"provider": "copilot_chat",
+			"model": "claude-haiku-4.5"
+		},
+		"model_parameters": []
+	},
+	"features": {
+		"edit_prediction_provider": "copilot"
+	},
+
+	/* Network: */
+
+	/* Other */
+	"ssh_connections": [
+		{
+			"host": "192.168.1.16",
+			"username": "cofymdd",
+			"args": [],
+			"projects": [
+				{
+					"paths": ["/Users/cofymdd/git/nix/./"]
+				}
+			],
+			"nickname": "macbook"
+		}
+	]
+}
