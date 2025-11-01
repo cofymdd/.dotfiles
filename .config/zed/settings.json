@@ -1,8 +1,13 @@
 {
 	/* General: */
+	"auto_update_extensions": {
+		"one-black-theme": false,
+		"wakatime": false,
+		"nix": false
+	},
 	"use_system_path_prompts": false,
 	"use_system_prompts": false,
-	"restore_on_startup": "none",
+	"restore_on_startup": "last_workspace",
 	"telemetry": {
 		"diagnostics": false,
 		"metrics": false
@@ -35,33 +40,19 @@
 
 	/* Ai */
 	"agent": {
+		"dock": "left",
 		"play_sound_when_agent_done": true,
 		"always_allow_tool_actions": true,
-		"default_profile": "ask",
+		"default_profile": "write",
 		"default_model": {
 			"provider": "copilot_chat",
-			"model": "claude-haiku-4.5"
+			"model": "gpt-5"
 		},
 		"model_parameters": []
 	},
 	"features": {
 		"edit_prediction_provider": "copilot"
-	},
+	}
 
 	/* Network: */
-
-	/* Other */
-	"ssh_connections": [
-		{
-			"host": "192.168.1.16",
-			"username": "cofymdd",
-			"args": [],
-			"projects": [
-				{
-					"paths": ["/Users/cofymdd/git/nix/./"]
-				}
-			],
-			"nickname": "macbook"
-		}
-	]
 }
