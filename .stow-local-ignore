@@ -1,6 +1,7 @@
+/.git
+/.zed
+
+^/.editorconfig
 ^/LICENSE
 ^/README
-
-/.git
-/.cursor
-/.vscode
+^/RESEARCH

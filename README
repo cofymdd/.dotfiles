@@ -1,39 +1,39 @@
 Base:
 base
-base-devel
 linux
 linux-firmware
 grub
 efibootmgr
+intel-ucode
 
 Packages:
 networkmanager
-nvidia-open nvidia-utils nvidia-container-toolkit
 pipewire wireplumber pipewire-pulse pipewire-alsa pipewire-jack
+nvidia-open nvidia-utils
 uwsm hyprland
-flatpak
-xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xdg-user-dirs
-ghostty
+xdg-desktop-portal xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xdg-user-dirs
 git less
-helix
-stow
-btop
 openssh
-wget
-nodejs npm
-ffmpeg
-playerctl
-docker docker-compose
-
-Aur:
-paru
+stow
+helix
+btop
+ghostty
 quickshell
-cursor-bin
-libxml2-legacy
+playerctl
+flatpak
+
+Development:
+base-devel
+docker docker-compose nvidia-container-toolkit
+nodejs npm
+wget
+ffmpeg
+
+Temporary:
+wofi
 
 Fonts:
 ttf-jetbrains-mono-nerd
-cozette (.local/share/fonts/cozette)
 
 Flatpaks:
 app.zen_browser.zen
@@ -43,11 +43,8 @@ com.spotify.Client
 org.gnome.World.Secrets
 
 Services:
-systemctl enable NetworkManager
+systemctl enable networkmanager
 
 Command:
 gsettings set org.gnome.desktop.interface color-scheme prefer-dark
 stow -v --no-folding -S .
-
-Temporary:
-wofi
